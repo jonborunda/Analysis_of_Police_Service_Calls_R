@@ -1,5 +1,5 @@
 /*
-*Data Cleaning in R
+* Data Cleaning in R
 */
 > setwd("~/Desktop/Analysis")
 > police_calls<-read.csv("Police_Calls_for_Service.csv",header= T, sep=",")
@@ -12,3 +12,7 @@
 > View(date_column_split)
 > disposition_cleaned<-(date_column_split[date_column_split$Disposition !='',])
 > View(disposition_cleaned)
+
+/*
+* Analysis and Visualizations in R IN PROGRESS
+*/
