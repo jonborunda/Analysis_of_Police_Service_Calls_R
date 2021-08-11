@@ -1,0 +1,14 @@
+/*
+*Data Cleaning in R
+*/
+> setwd("~/Desktop/Analysis")
+> police_calls<-read.csv("Police_Calls_for_Service.csv",header= T, sep=",")
+> View(police_calls)
+> deleted_columns<-police_calls[-c(1,4,5,6,7,8,10:16)]
+> View(deleted_columns)
+> install.packages("tidyr")
+> library(tidyr)
+> date_column_split<-separate(deleted_columns,Incident.Date,c("month","day","year"),sep="/")
+> View(date_column_split)
+> disposition_cleaned<-(date_column_split[date_column_split$Disposition !='',])
+> View(disposition_cleaned)
