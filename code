@@ -37,4 +37,4 @@
 > library(RColorBrewer)
 
 > color<-brewer.pal(8,"Set2")
-> barplot(sort(count_disposition, decreasing = TRUE),main='Disposition Distribution',ylab= 'Frequency',cex.names = .3, cex.axis = .3,las=2,col=color)
+> barplot(sort(count_disposition, decreasing = TRUE),main='Disposition Distribution',ylab= 'Frequency',cex.names = .3, cex.axis = .3, cex.lab= .5, las=2,col=color)
