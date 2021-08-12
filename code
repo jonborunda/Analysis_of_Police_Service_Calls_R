@@ -22,6 +22,11 @@
 /*
 * Analysis and Visualizations in R IN PROGRESS
 */
+
+/*
+* BAR PLOT
+*/
+
 > count_disposition<-table(dispotion_cleaned$Disposition)
 
 /*
