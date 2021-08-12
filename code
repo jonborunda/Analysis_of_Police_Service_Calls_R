@@ -22,3 +22,14 @@
 /*
 * Analysis and Visualizations in R IN PROGRESS
 */
+> count_disposition<-table(dispotion_cleaned$Disposition)
+
+/*
+*Installation of this package is for use of color palette
+*/
+
+> install.packages("RColorBrewer")
+> library(RColorBrewer)
+
+> color<-brewer.pal(8,"Set2")
+> barplot(sort(count_disposition, decreasing = TRUE),main='Disposition Distribution',ylab= 'Frequency',cex.names = .3, cex.axis = .3,las=2,col=color)
