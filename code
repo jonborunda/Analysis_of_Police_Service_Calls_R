@@ -8,7 +8,7 @@
 > View(deleted_columns)
 
 /*
-*Installation of this packages is needed to use the separate function
+*Installation of this package is needed to use the separate function
 */
 
 > install.packages("tidyr")
